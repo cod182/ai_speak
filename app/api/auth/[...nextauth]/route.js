@@ -12,7 +12,12 @@ const handler = NextAuth({
   async session({ session }) {
 
   },
-  async signIn({ profile }) { }
+  async signIn({ profile }) {
+    try {
+      //serverless route/ Lambda function. Only opened when called
+
+    }
+  }
 })
 
 export { handler as GET, handler as POST }
