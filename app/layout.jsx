@@ -1,18 +1,18 @@
-import '@styles/global.css';
+import '@styles/globals.css';
 
 export const metadata = {
   title: 'ai speak',
   description: 'Discover and share the language that AI speaks!',
 };
 
-const RootLayout = () => {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
         <div className="main">
           <div className="gradient" />
-          <main className="app">{children}</main>
         </div>
+        <main className="app">{children}</main>
       </body>
     </html>
   );
