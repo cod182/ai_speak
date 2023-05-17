@@ -37,7 +37,7 @@ const CreatePrompt = () => {
       post={post}
       setPost={setPost}
       submitting={submitting}
-      handleSubmit={CreatePrompt}
+      handleSubmit={createPrompt}
     />
   );
 };
