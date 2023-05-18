@@ -31,7 +31,7 @@ const Nav = () => {
           src="/assets/images/logo.svg"
           alt="logo"
         />
-        <p className="logo_text">AI Speak</p>
+        <p className="logo_text">AI Lingo</p>
       </Link>
 
       {/* Desktop Nav */}
