@@ -1,9 +1,26 @@
-import React from 'react'
+'use client';
+
+import { useEffect, useState } from 'react';
+import PromptCard from './PromptCard';
 
 const Feed = () => {
-  return (
-    <div>Feed</div>
-  )
-}
+  const [searchText, setSearchText] = useState('');
 
-export default Feed
+  const handleSearchChange = (e) => {};
+  return (
+    <section className="feed">
+      <form className="relative w-full flex-center">
+        <input
+          type="text"
+          value={searchText}
+          onChange={handleSearchChange}
+          required
+          className="search_input peer"
+          placeholder="Search for a tag or username"
+        />
+      </form>
+    </section>
+  );
+};
+
+export default Feed;
