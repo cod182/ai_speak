@@ -80,8 +80,8 @@ const Feed = () => {
         />
       </form>
 
-      {/* All Prompts */}
-      {searchText ? (
+{/* All Prompts */}
+{searchText ? (
         <PromptCardList
           data={searchedResults}
           handleTagClick={handleTagClick}
